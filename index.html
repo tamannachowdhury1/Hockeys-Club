@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys Club</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60fa185e5.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-btn': '#FF4240',
+                        'nav-li': '#424247',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header>
+        <nav class="container mx-auto lg:w-[1170px] my-10 ">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow font-regular text-base">
+                            <li><a class="text-primary-btn font-bold ">Home</a></li>
+
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h1 class=" font-extrabold text-4xl">Hockey<span class="text-primary-btn">’</span>s</h1>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-nav-li font-regular text-base">
+                        <li><a class="text-primary-btn font-bold ">Home</a></li>
+
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <span><i class="fa-solid fa-magnifying-glass text-[#89898B] -ml-10"></i></span>
+                    <a class="btn font-bold  lg:text-xl text-white bg-primary-btn lg:w-36 lg:h-14">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container mx-auto lg:w-[1170px] lg:my-14">
+            <div class="carousel w-full relative">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full" />
+                    <div class="absolute left-7 bottom-10 translate-y-1/4 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white ml-3">❯</a>
+                    </div>
+                </div>
+                <div class="absolute bg-black text-white p-7 rounded-xl bottom-16 translate-y-1/4  right-7 space-y-3">
+                    <h4 class="font-extrabold text-xl">Meet all the heroes from the field</h4>
+                    <p class="font-medium text-base text-white opacity-60">Dit amet consectetur. Condimentum dignissim
+                        adipiscing
+                        aliquam <br>
+                        turpis
+                        placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+</body>
+
+</html>
